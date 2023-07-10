@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  z-index: -100;
+}
+
+form,
+ul,
+div,
+h1,
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#clock {
+  margin-top: 20%;
+  margin-bottom: 0;
+  font-size: 100px;
+}
+
+#greeting {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#login-form input[type="text"],
+#todo-form input[type="text"] {
+  width: 30vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+
+#login-form input[type="text"]:focus,
+#todo-form input[type="text"]:focus {
+  outline: 0;
+  color: white;
+  text-align: center;
+  height: 7vh;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0.2rem rgba(249, 249, 249, 0.25);
+}
+
+#login-form input[type="text"]::placeholder,
+#todo-form input[type="text"]::placeholder {
+  text-align: center;
+  color: white;
+}
+
+#login-form input[type="submit"]:hover {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#todo-form {
+  margin-top: 5%;
+}
+
+#todo-list {
+  width: 50vw;
+  margin: 15px auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+#todo-list > li {
+  padding-top: 10px;
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}
+
+#todo-list > li:last-child {
+  padding-bottom: 10px;
+}
+
+#todo-list > li > button {
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#todo-list > li:hover {
+  font-size: 25px;
+}
+
+#quote {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  width: 60vw;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#weather {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  width: 10vw;
+}
